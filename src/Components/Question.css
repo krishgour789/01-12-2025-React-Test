@@ -1,0 +1,11 @@
+.h1{
+    display: flex;
+    align-items: center;
+
+}
+
+.button{
+    background-color: aquamarine;
+    font-size: 20px;
+    border-radius: 4px;
+}

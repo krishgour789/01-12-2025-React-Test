@@ -1,12 +1,26 @@
 import React from 'react'
+import { useState } from 'react'
 
-const ProductCard = ({name,price,brand}) => {
+const ProductCard = () => {
+  
+  const [name,setName]=useState("");
+  const change=(e)=>{
+    setName(e.target.value);
+  }
+  const [city,setcity]=useState("");
+  const city1=(e)=>{
+    setcity(e.target.value);
+  }
+
+
   return (
-    <div>
-      <h1>Car Name : {name}</h1>
-      <h1>Car price : {price}</h1>
-      <h1>Card Brand : {brand}</h1>
-    </div>
+    <>
+      Enter Name :<input type="text" onChange={change} />
+      Your name:{name}
+      <br /> <br />
+      Enter Your City : <input type="text" onChange={city1} />
+      Your City : {city}
+    </>
   )
 }
 

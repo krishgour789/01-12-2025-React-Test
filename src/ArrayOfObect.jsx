@@ -2,7 +2,7 @@ import React from 'react'
 
 const ArrayOfObect = () => {
     let data = [{id:1,name:"Krish",city:"Sehore"},
-        {id:1,name:"Krish",city:"Sehore"}
+        {id:1,name:"Taresh",city:"Bhopal"}
     ]
   return (
     <>

@@ -7,7 +7,11 @@ import './index.css'
 // import App  from './Components/Home.jsx'
 // import App  from './Components/Register.jsx'
 // import App from './Map'
-import App from './ArrayOfObect'
+
+import App from './Components/Datashow'
+
+// import App from './Components/Useeffect'
+// import App from './ArrayOfObect'
 // import App  from './Components/Question2.jsx'
 // import App  from './Components/word.jsx'
 

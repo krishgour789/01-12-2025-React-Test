@@ -3,18 +3,31 @@ import React, { useEffect, useState } from "react";
 
 const Datashow = () => {
   const [train,settrain] = useState([]);
-  useEffect(() => {
 
-    axios.get("http://localhost:3000/Train")
+  let fetch=()=>{
+     axios.get("http://localhost:3000/Train")
       .then((res) => {
         settrain( res.data);
       })
       .catch((error) => {
         console.error("API Error:", error);
       });
+  }
+  useEffect(() => {
+    fetch()
+
+   
 
   }, []);
+  let datadelete = (id) => {
+    
+    axios.delete(`http://localhost:3000/Train/${id}`)
+      .then((res) => {
+        alert("Booking cancelled");
+        fetch()
+      })
 
+  }
   return (
     <>
       <div>
@@ -29,6 +42,7 @@ const Datashow = () => {
                 <th>Contact</th>
                 <th>Passenger</th>
                 <th>Fair</th>
+                <th>Cancel</th>
               </tr>
             </thead>
             <tbody>
@@ -40,6 +54,7 @@ const Datashow = () => {
                 <td>{e.Contact}</td>
                 <td>{e.Passenger}</td>
                 <td>{e.TotalFair}</td>
+                <td onClick={()=>{datadelete(e.id)}}>Delete</td>
               </tr>
             ))}
 

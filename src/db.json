@@ -1,20 +1,13 @@
 {
   "Train": [
     {
-      "Name": "Taresh",
-      "Adharno": 123456789,
-      "Contact": "15-12-2025",
-      "Passenger": 2,
-      "TotalFair": 1000,
-      "id": "cd15"
-    },
-    {
-      "Name": "Taresh",
-      "Adharno": 123456789,
-      "Contact": "15-12-2025",
-      "Passenger": 2,
-      "TotalFair": 1000,
-      "id": "cd15"
+      "id": "2305",
+      "name": "krish",
+      "adhar": "52343465365",
+      "contact": "6261848268",
+      "passenger": "4",
+      "totalfair": "5",
+      "person": 500
     }
   ]
 }

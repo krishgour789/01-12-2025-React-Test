@@ -49,11 +49,11 @@ const Datashow = () => {
             {train.map((e) =>(
               <tr key={e.id}>
                 <td>{e.id}</td>
-                <td>{e.Name}</td>
-                <td>{e.Adharno}</td>
-                <td>{e.Contact}</td>
-                <td>{e.Passenger}</td>
-                <td>{e.TotalFair}</td>
+                <td>{e.name}</td>
+                <td>{e.adhar}</td>
+                <td>{e.contact}</td>
+                <td>{e.passenger}</td>
+                <td>{e.totalfair*e.person}</td>
                 <td onClick={()=>{datadelete(e.id)}}>Delete</td>
               </tr>
             ))}

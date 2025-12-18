@@ -8,6 +8,7 @@ import './index.css'
 // import App  from './Components/Register.jsx'
 // import App from './Map'
 
+// import App from './Components/Valida'
 import App from './Components/Datashow'
 // import App from './Components/Form'
 // import App from './Components/Work'

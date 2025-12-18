@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 const Datashow = () => {
   const [train,settrain] = useState([]);
 
+
   let fetch=()=>{
      axios.get("http://localhost:3000/Train")
       .then((res) => {
@@ -43,6 +44,7 @@ const Datashow = () => {
                 <th>Passenger</th>
                 <th>Fair</th>
                 <th>Cancel</th>
+                <th>Edit</th>
               </tr>
             </thead>
             <tbody>
@@ -55,6 +57,9 @@ const Datashow = () => {
                 <td>{e.passenger}</td>
                 <td>{e.totalfair*e.person}</td>
                 <td onClick={()=>{datadelete(e.id)}}>Delete</td>
+                 <td>
+              <button onClick={() => setEditUser(user)}>Edit</button>
+            </td>
               </tr>
             ))}
 
@@ -62,6 +67,9 @@ const Datashow = () => {
 
           </table>
           </div>
+
+          
+          
        
 
      

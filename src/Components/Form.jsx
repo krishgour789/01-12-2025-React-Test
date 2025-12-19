@@ -8,7 +8,7 @@ const Form = () => {
     adhar:"",
     contact:"",
     passenger:"",
-    totalfair:"",
+    // totalfair:"",
   })
   let handlechange = (e)=>{
     setform({...form,[e.target.name]:e.target.value});
@@ -35,7 +35,7 @@ const Form = () => {
         ADHAR : <input type="text" name='adhar' value={form.adhar} onChange={handlechange}/> <br />
         CONTACT : <input type="text" name='contact' value={form.contact} onChange={handlechange}/> <br />
         PASSENGER : <input type="text" name='passenger' value={form.passenger} onChange={handlechange}/> <br />
-        TOTAL FAIR : <input type="text" name='totalfair' value={form.total} onChange={handlechange}/> <br />
+        {/* TOTAL FAIR : <input type="text" name='totalfair' value={form.total} onChange={handlechange}/> <br /> */}
         
         <input type="submit" />
     </form>

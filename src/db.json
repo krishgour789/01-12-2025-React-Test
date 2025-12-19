@@ -1,13 +1,22 @@
 {
   "Train": [
     {
-      "id": "2305",
-      "name": "krish",
+      "name": "kanha",
+      "adhar": "52343465365tytyt",
+      "contact": "6261848268yuy",
+      "passenger": "6",
+      "totalfair": "3",
+      "person": 500,
+      "id": "2305"
+    },
+    {
+      "name": "Gourav",
       "adhar": "52343465365",
-      "contact": "6261848268",
-      "passenger": "4",
-      "totalfair": "5",
-      "person": 500
+      "contact": "06261848268",
+      "passenger": "6",
+      "totalfair": "",
+      "person": 500,
+      "id": "f144"
     }
   ]
 }

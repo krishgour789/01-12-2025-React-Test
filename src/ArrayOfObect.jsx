@@ -12,6 +12,7 @@ const ArrayOfObect = () => {
                <div key={e.id}>
                 <h1>{e.name}</h1>
                 <p>{e.city}</p>
+                
 
                </div>
             ))}
